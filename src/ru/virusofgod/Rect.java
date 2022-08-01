@@ -1,8 +1,12 @@
 package ru.virusofgod;
 
-class Rect {
-    double width = 15;
-    double height = 20;
+public class Rect {
+  private  double width = 15;
+  private double height = 20;
+  private Rect rect;
+
+  private String nameOfRect;
+
 
     public Rect() {
     }
@@ -30,12 +34,38 @@ class Rect {
         this.height = height;
     }
 
+    public Rect getRect() {
+        return rect;
+    }
+
+    public void setRect(Rect rect) {
+        this.rect = rect;
+    }
+
+    public String getNameOfRect() {
+        return nameOfRect;
+    }
+
+    public void setNameOfRect(String nameOfRect) {
+        this.nameOfRect = nameOfRect;
+    }
+
     @Override
     public String toString() {
         return "Rect{" +
                 "width=" + width +
                 ", height=" + height +
+                ", rect=" + rect +
+                ", nameOfRect='" + nameOfRect + '\'' +
                 '}';
     }
 
+    double getArea(){
+        return width * height;
+    }
+
+    void maignify(double koeff){
+    width *=koeff;
+    height*=koeff;
+    }
 }
