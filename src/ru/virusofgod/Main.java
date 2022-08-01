@@ -14,10 +14,7 @@ class ИмяКласса{
 public class Main {
 
     public static void main(String[] args) {
-
-
-
-        Rect rect = new Rect(75, 40);
+     /* Rect rect = new Rect(75, 40);
         rect.setHeight(1000);
         rect.setWidth(15);
         rect.setNameOfRect("I am rect");
@@ -65,6 +62,21 @@ public class Main {
         System.out.println(rect);
         System.out.println("Проинициализировал ссылку rect через метод,  находящуюся в классе Rect: rect.setRect(new Rect());");
         System.out.println("Все поля приватны соблюдён принцип инкапсуляции.");
+*/
+
+         Point point1 = new Point();
+         Point point2 = new Point();
+
+         point1.input();
+         System.out.println(point1);
+         point2.input();
+        System.out.println(point2);
+        System.out.println(point1.getDistance(point2));
+        System.out.println("Start moving the point1");
+        point1.move(100, 120);
+        System.out.println(point1);
+        System.out.println(point1.getDistance(point2));
+
 
     }
 }
