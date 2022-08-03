@@ -64,7 +64,9 @@ public class Main {
         System.out.println("Все поля приватны соблюдён принцип инкапсуляции.");
 */
 
-         Point point1 = new Point();
+
+        //class point example
+       /*  Point point1 = new Point();
          Point point2 = new Point();
 
          point1.input();
@@ -75,8 +77,27 @@ public class Main {
         System.out.println("Start moving the point1");
         point1.move(100, 120);
         System.out.println(point1);
-        System.out.println(point1.getDistance(point2));
+        System.out.println(point1.getDistance(point2));*/
 
+
+       // shell classes of primitive types
+        /*Double number =  new Double(15.55d);//можно написать так но
+        Double number2 = 15.55d; // так написать проще. Это автоупаковка, примитивный
+        // тип упаковывается в класс упаковку!!!
+
+        Double number3 = Double.valueOf(15.55d); // Объявление переменой и присвоения ей значения один из вариантов
+        Double number4 = Double.valueOf("15.55"); //Передал строку в качестве значения!!!
+        System.out.println(number + " Проверяем синтаксис");
+        double numberCopy = number.doubleValue(); // ручная распаковка
+        System.out.println(numberCopy);// проверяем значение переменной
+        System.out.println(number.toString()); //Превращаем число в строку.
+        String a =  "156";
+        Integer integer = Integer.parseInt(a);
+        System.out.println(integer);
+        System.out.println(integer.toOctalString(integer)); //Переведём значение переменной integer
+        // в восмиричную систему.
+        int c = integer; // автораспаковка!!!!
+        integer = c;*/
 
     }
 }
