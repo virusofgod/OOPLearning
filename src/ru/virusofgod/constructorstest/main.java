@@ -19,9 +19,11 @@ public class main {
               System.out.println(Person.getCounter() - 1);
           }*/
 
-        Fraction fraction = new Fraction(0, 0);
-          System.out.println(fraction);
-
+          //lesson 17 example 6 fraction & constructors
+      /*    {
+              Fraction fraction = new Fraction(0, 0);
+              System.out.println(fraction);
+          }*/
       }
 
 
