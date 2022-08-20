@@ -1,9 +1,9 @@
 package ru.virusofgod.reloadedconstructors;
 
 public class Person {
-    private String firstName;
-    private String lastName;
-    private char gender;
+   protected String firstName;
+    protected String lastName;
+    protected char gender;
 
     public Person(){
         this("","", '-');
@@ -26,6 +26,30 @@ public class Person {
     public Person(String lastName, String firstName){
         this.firstName=firstName;
         this.lastName=lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public char getGender() {
+        return gender;
+    }
+
+    public void setGender(char gender) {
+        this.gender = gender;
     }
 
     @Override
