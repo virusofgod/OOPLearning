@@ -3,6 +3,7 @@ package ru.virusofgod.interfacetest;
 public class Journal implements Printable{
    private String name;
     public Journal(String name){
+
         this.name=name;
     }
 
