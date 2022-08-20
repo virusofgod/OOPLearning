@@ -12,5 +12,7 @@ String autor;
     @Override
     public void print() {
         System.out.printf("%s (%s)", name, autor);
+        System.out.println();
     }
+
 }

@@ -2,7 +2,10 @@ package ru.virusofgod.interfacetest;
 
 public interface Printable {
 
-    public void print();
+    void print();
+   default void read(String appendString){
+        System.out.println("Read Printable" + " /////////appended string//////// --> " + appendString);
+    };
 
 
 }
